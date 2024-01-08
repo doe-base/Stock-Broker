@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route, Routes } from 'react-router-dom'; //Navigate
+import Layout from './Layout';
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import theme from './muiTheme';
 
-function App() {
+
+// const theme = createTheme({
+//   breakpoints: {
+//     values: {
+//       xs: 0,
+//       sm: 600,
+//       md: 960,
+//       lg: 1280,
+//       xl: 1920,
+//     },
+//   },
+// })
+
+
+const App: React.FC =()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+       {/* <CssBaseline /> */}
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Layout />}/>
+          </Routes>
+        </BrowserRouter>
+      
+
+
+    </ThemeProvider >
   );
 }
 

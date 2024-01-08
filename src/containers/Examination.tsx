@@ -78,7 +78,7 @@ const ExaminationContainer: React.FC =()=>{
 
 
                 <Grid container className={classes.container2} style={{justifyContent: 'center', alignItems: 'center'}}>
-                    <Grid xs={12} md={9} style={{justifyContent: 'center', alignItems: 'center'}}>
+                    <Grid item xs={12} md={9} style={{justifyContent: 'center', alignItems: 'center'}}>
                         <div className={classes.card}>
                             <div className={classes.cardTitleSec}>
                                 <div>

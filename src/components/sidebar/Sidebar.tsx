@@ -13,7 +13,6 @@ interface MyComponentProps {
 
 const Sidebar: React.FC<MyComponentProps> = ({ sidebar, drawerActive, setDrawerActive }) => {
     const classes = useStyles({ drawerActive })
-    console.log(window.innerWidth)
 
     function closeDrawer(){
         setDrawerActive(false)

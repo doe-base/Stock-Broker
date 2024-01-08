@@ -19,7 +19,6 @@ const HomeContainer: React.FC<MyComponentProps> = ({ setDrawerActive }) => {
     const [count4, setCount4] = useState(0)
 
 
-    console.log(count)
     // const linksContainerRef = useRef<HTMLInputElement>(null);
     // const linksRef = useRef<HTMLUListElement>(null);
     // const toggleLinks = () => {
@@ -134,7 +133,7 @@ const HomeContainer: React.FC<MyComponentProps> = ({ setDrawerActive }) => {
         
         <Hero>
             <Grid container style={{alignItems: 'center', justifyContent: 'space-between'}}>
-                <Grid item sm={6} md={6} lg={6}>
+                <Grid item xs={12} sm={6} md={6} lg={6}>
                     <div className={classes.textSection}>
                         <p className={classes.pblock}>STOCK BROKER</p>
                         <h1 className={classes.h1block}>Kaitlin Rose Sternberg</h1>
@@ -144,7 +143,7 @@ const HomeContainer: React.FC<MyComponentProps> = ({ setDrawerActive }) => {
                         </a>
                     </div>
                 </Grid>
-                <Grid item sm={6} md={6} lg={5.5}>
+                <Grid item xs={12} sm={6} md={6} lg={5.5}>
                     <div className={classes.heroImg}><img src="/imgs/img6.jpg" alt="" style={{width: '100%'}}/></div>
                 </Grid>
             </Grid>
